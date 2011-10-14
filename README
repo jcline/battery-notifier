@@ -7,3 +7,11 @@ be able to run `shutdown -Ph now`.
 
 Note: This does not notify you via any GUI popups. Nor will it work in a
 terminal emulator by itself. GNU screen and tty's will pick up the notification.
+
+Tested in bash v. 4.2.
+Dependencies:
+	acpi kernel support
+	bc
+	shutdown
+	sysfs
+	wall

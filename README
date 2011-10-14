@@ -1,0 +1,9 @@
+A basic battery level notifier.
+
+It checks sysfs entry for BAT0 every $SLEEP_LONG, if you are discharging, it 
+then checks if the % is < 5, then < 1. If < 5, it notifies you via `wall`, if
+< 1, it shuts down your computer. As a result, the user it runs from needs to 
+be able to run `shutdown -Ph now`.
+
+Note: This does not notify you via any GUI popups. Nor will it work in a
+terminal emulator by itself. GNU screen and tty's will pick up the notification.
